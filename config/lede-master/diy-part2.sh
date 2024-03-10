@@ -36,14 +36,14 @@ sed -i 's/192.168.1.1/192.168.50.254/g' package/base-files/files/bin/config_gene
 # svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile ./feeds/packages/utils/runc/Makefile
 
 # kenzok8/small插件
-svn co https://github.com/kenzok8/small ./feeds/packages/small
+svn co https://github.com/kenzok8/small.git ./feeds/packages/small
 
 # v2ray-plugin和mosdns编译失败！
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/packages/net/{alist,adguardhome,mosdns,smartdns}
 rm -rf feeds/smpackage/luci-app-adguardhome
 rm -rf feeds/packages/lang/golang
-svn co https://github.com/kenzok8/golang ./feeds/packages/lang/golang
+svn co https://github.com/kenzok8/golang.git ./feeds/packages/lang/golang
 
 # coolsnowwolf default software package replaced with Lienol related software package
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
