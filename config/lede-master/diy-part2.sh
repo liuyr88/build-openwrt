@@ -35,9 +35,6 @@ sed -i 's/192.168.1.1/192.168.50.254/g' package/base-files/files/bin/config_gene
 # rm -rf ./feeds/packages/utils/runc/Makefile
 # svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile ./feeds/packages/utils/runc/Makefile
 
-# kenzok8/small插件
-svn co https://github.com/kenzok8/small.git ./feeds/packages/small
-
 # v2ray-plugin和mosdns编译失败！
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/packages/net/{alist,adguardhome,mosdns,smartdns}
